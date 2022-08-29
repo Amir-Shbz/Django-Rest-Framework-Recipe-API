@@ -1,7 +1,6 @@
 """
 Serializers for recipe APIs.
 """
-from dataclasses import field
 from rest_framework import serializers
 
 from core.models import (
@@ -17,7 +16,7 @@ class IngredientSerializer(serializers.ModelSerializer):
         model = Ingredient
         fields = ['id', 'name']
         read_only_fields = ['id']
-        
+
 
 class TagSerializer(serializers.ModelSerializer):
 
